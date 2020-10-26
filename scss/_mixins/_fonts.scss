@@ -1,0 +1,21 @@
+$font-primary: 'Poppins', serif;
+
+@mixin font-light(){
+	font-family: $font-primary;
+	font-weight: 300;
+}
+
+@mixin font-regular(){
+	font-family: $font-primary;
+	font-weight: 400;
+}
+
+@mixin font-medium(){
+	font-family: $font-primary;
+	font-weight: 500;
+}
+
+@mixin font-bold(){
+	font-family: $font-primary;
+	font-weight: 600;
+}

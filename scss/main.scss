@@ -1,0 +1,71 @@
+// Variables y mixins
+@import "_variables/colors";
+@import "_mixins/fonts";
+@import "_mixins/devices";
+
+//Componentes
+@import "_components/buttons";
+
+
+//Parciales
+@import "_partials/header";
+@import "_partials/content";
+@import "_partials/footer";
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+img{
+	max-width: 100%;
+	vertical-align: top;
+}
+
+body, html{
+	font-size: 10px;
+	@include font-regular();
+}
+
+.container{
+	width: 90%;
+	max-width: 117rem;
+	margin: 0 auto;
+}
+
+.section-title-container{
+	text-align: center;
+
+	h2{
+		font-size: 3.1rem;
+		color: $color-primary;
+		line-height: 3.1rem;
+		margin-bottom: 1rem;
+
+		@include mobile{
+			font-size: 2.1rem;
+		}
+	}
+
+	p{
+		font-size: 1.6rem;
+		color: $color-text-light;
+		@include font-light();
+	}
+}
+
+.page-section{
+	padding: 9rem 0;
+}

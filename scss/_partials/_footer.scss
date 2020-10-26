@@ -1,0 +1,11 @@
+footer{
+	background: $color-primary;
+	padding: 5rem 0;
+
+	p{
+		font-size: 1.4rem;
+		color: $color-white;
+		text-align: center;
+		@include font-light();
+	}
+}

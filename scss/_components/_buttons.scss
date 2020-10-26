@@ -1,0 +1,33 @@
+.vac-btn{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 26rem;
+	padding: 1.2rem 0;
+	font-size: 1.4rem;
+	@include font-medium();
+
+	&.vac-btn-primary{
+		background: $color-primary;
+		color: $color-white;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover{
+			background: lighten($color-primary, 10%);
+		}
+	}
+
+	&.vac-btn-alternative{
+		background: $color-white;
+		color: $color-primary;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover{
+			background: rgba($color-white, 0.9);
+		}
+	}
+}
